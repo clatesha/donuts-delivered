@@ -1,0 +1,254 @@
+/*Nav*/
+li {
+  list-style-type: none;
+  padding: 5px;
+  font-family: 'Calistoga', cursive;
+  font-size: 20px;
+}
+
+nav ul li {
+  font-family: 'Calistoga', cursive;
+  font-size: 20px;
+}
+
+/*Fullscreen Navigation*/
+#fullnav {
+  display: none;
+}
+
+/*Donut Icon*/
+
+#headerwrap {
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 1fr 1fr 70px;
+}
+
+header {
+  grid-column: 1;
+  grid-row: 1;
+  width: 65px;
+  place-self: center;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+
+header a {
+  padding: 0;
+ }
+
+span {
+  color: #340068;
+  grid-column: 6;
+  grid-row: 1;
+  margin-top: 30px;
+  }
+
+/*Donuts Delivered*/
+h1 {
+  grid-column: 2 / span 4;
+  grid-row: auto;
+  color: #340068;
+  font-size: 35px;
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+  padding-top: 10px;
+  justify-self: center;
+}
+
+/*Hero Background Image*/
+
+#picspace {
+ height: 500px;
+}
+
+#backgroundimg {
+  background-image: url(images/home4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+#heroimg {
+  max-width: 100%;
+}
+
+/*Favorites Scroll*/
+.cycle-slideshow img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+.cycle-overlay {
+ text-align: center;
+ padding-top: 20px;
+}
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    color: #ef3e36;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+#favblock {
+    background-color: #b1ede8;
+    height: 455px;
+    margin: 10px 20px;
+}
+
+ /*Reviews (will make media query for table/fullsceen)*/
+
+ #review1 p,
+ #review2 p {
+     width: auto;
+     text-align: center;
+     padding: 20px;
+     background-color: #dbccea;
+     margin: 10px 20px;
+ }
+
+
+ /*Footer*/
+ footer {
+     text-align: center;
+
+ }
+
+ footer img {
+     height: 10px;
+ }
+
+ footer a {
+  text-decoration: none;
+  color: #ef3e36;
+}
+
+#footer {
+  text-decoration: solid;
+}
+
+
+/*Menu with CSS*/
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: #dbccea;
+  overflow-x: scroll;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 50%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #340068;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #ef3e36;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+      font-size: 20px
+  }
+
+  .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
+}
+
+
+
+/*About Page*/
+
+#aboutimg {
+  max-width: 70%;
+  margin: 20px 30px 20px 40px;
+  float: left;
+}
+
+#aboutp p {
+  padding: 0 20px 10px 15px;
+}
+
+footer {
+  clear: both;
+}
+
+
+/*Contact Us Page*/
+
+#form1 {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+}
+
+form {  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 90px 1fr;
+  gap: 9px;
+  grid-column: 2/3;
+  justify-self: center;
+  background-color: #dbccea;
+  min-width: 400px; width: 60%; 
+  padding: 45px;
+}
+
+input[type="submit"] { 
+  grid-column: 2;
+  width: 120px; 
+  margin-left: 0;
+}
+
+input[type="reset"] {
+  grid-column: 2;
+  width: 120px;
+  margin-left: 0;
+}
+
+label {
+  grid-column: 1/2;
+}  
+
+/*FAQ Page*/
+#faqimg {
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#faqp {
+  margin: 0 35px;
+  padding: 20px 10px;
+}
+

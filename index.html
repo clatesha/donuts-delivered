@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <link href="project.css" rel="stylesheet" />
+    <link href="css/media1.css" rel="stylesheet" />
+    <link href="css/media2.css" rel="stylesheet" />
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Calistoga|EB+Garamond&display=swap" rel="stylesheet">
+
+    <!--Javascript for Image Scroll-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+
+</head>
+
+<body>
+    <div id="backgroundimg">
+        <div id="headerwrap">
+            <h1>Donuts<br>Delivered</h1>
+            <header>
+
+                <a href="index.html"><img src="icons/homeimage2.svg" alt="donut"></a>
+                <div id="picspace"></div>
+
+
+
+            </header>
+            <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+            <!--Fullscreen Nav-->
+            <div id="fullnav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                        </li>
+
+                        <li><a href="about.html">About</a>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="reviews.html">Reviews</a></li>
+                            </ul>
+                        </li>
+
+                        <li>Menu
+                            <ul>
+                                <li><a href="menu1.html">Donut Menu</a></li>
+                                <li><a href="menu2.html">Coffee Menu</a></li>
+                            </ul>
+                        </li>
+
+                        <li>Order Now
+                            <ul>
+                                <li><a href="orderdetails.html">Order Details</a></li>
+                                <li><a href="orderbyo.html">Build Your Order</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!--Hamburger Nav-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <nav class="overlay-content">
+                <ul>
+                    <li><a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li><a href="about.html">About</a>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="reviews.html">Reviews</a></li>
+                        </ul>
+                    </li>
+
+                    <li>Menu
+                        <ul>
+                            <li><a href="menu1.html">Donuts</a></li>
+                            <li><a href="menu2.html">Coffee</a></li>
+                        </ul>
+                    </li>
+
+                    <li>Order Now
+                        <ul>
+                            <li><a href="orderdetails.html">Order Details</a></li>
+                            <li><a href="orderbyo.html">Build Your Order</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+
+    <main>
+
+        <div id="favblock">
+            <h2>Favorites</h2>
+            <!--<div id="favorites" class="shuffle">-->
+            <div class="cycle-slideshow" data-cycle-center-horz=true data-cycle-center-vert=true
+                data-cycle-fx=scrollHorz data-cycle-caption-plugin=caption2>
+                <br>
+                <div class="cycle-overlay"></div>
+
+                <img src="images/donutmenu/donut5.jpg" data-cycle-title="Winter" data-cycle-desc="Sonnenberg"
+                    alt="several donuts">
+                <img src="images/donutmenu/donut6.jpg" data-cycle-title="Spring" data-cycle-desc="Gardens"
+                    alt="several donuts">
+                <img src="images/donutmenu/donut7.jpg" data-cycle-title="Summer" data-cycle-desc="Green"
+                    alt="several donuts">
+                <img src="images/donutmenu/donut8.jpeg" data-cycle-title="Fall" data-cycle-desc="Blue"
+                    alt="several donuts">
+
+            </div>
+        </div>
+
+        <h2>Reviews</h2>
+        <div id="reviewblock">
+            <div id="review1">
+
+                <p>
+                    Tootsie roll jelly carrot cake marshmallow sesame snaps cake. Tart croissant dessert. Sugar plum
+                    chupa
+                    chups
+                    marshmallow tootsie roll tart gingerbread chupa chups jelly beans lemon drops. Bonbon cupcake sweet
+                    cheesecake sweet roll candy cookie caramels pie.
+                </p>
+            </div>
+            <div id="review2">
+                <p>
+                    Tootsie roll jelly carrot cake marshmallow sesame snaps cake. Tart croissant dessert. Sugar plum
+                    chupa
+                    chups
+                    marshmallow tootsie roll tart gingerbread chupa chups jelly beans lemon drops. Bonbon cupcake sweet
+                    cheesecake sweet roll candy cookie caramels pie.
+                </p>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <footer>
+        Copyright &copy; 2020 Donuts Delivered
+        <img src="icons/homeimage.png" alt="donut">
+        <img src="icons/coffee7.png" alt="donut">
+        <img src="icons/delivered.png" alt="donut">
+        <br />
+        <div id="footer">Have A Question?</div>
+        <a href="mailto:donutsdelivered@donutsdelivered">
+            donutsdelivered@donutsdelivered.com</a><br><br>
+    </footer>
+
+
+</body>
+
+</html>
