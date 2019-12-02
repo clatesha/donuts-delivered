@@ -1,3 +1,5 @@
+* { box-sizing: border-box; }
+
 /*Nav*/
 li {
   list-style-type: none;
@@ -26,7 +28,7 @@ nav ul li {
 header {
   grid-column: 1;
   grid-row: 1;
-  width: 65px;
+  width: 100px;
   place-self: center;
   padding-top: 25px;
   padding-left: 30px;
@@ -62,12 +64,13 @@ h1 {
 }
 
 #backgroundimg {
-  background-image: url(images/home4.jpg);
+  background-image: url(../images/home4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
   height: auto;
   background-size: cover;
+  margin-bottom: 70px;
 }
 
 #heroimg {
@@ -92,12 +95,12 @@ h2 {
     padding-top: 20px;
     margin-bottom: 5px;
     margin-top: 0px;
+    font-size: 30px;
 }
 
 #favblock {
-    background-color: #b1ede8;
+    background-color: hsla(175, 62.5%, 81.2%, 0.3);
     height: 455px;
-    margin: 10px 20px;
 }
 
  /*Reviews (will make media query for table/fullsceen)*/
@@ -106,8 +109,10 @@ h2 {
  #review2 p {
      width: auto;
      text-align: center;
-     padding: 20px;
-     background-color: #dbccea;
+     font-size: 20px;
+     padding: 60px;
+     line-height: 150%;
+     background-color: hsl(270, 41.7%, 85.9%, 0.3);
      margin: 10px 20px;
  }
 
@@ -210,7 +215,7 @@ footer {
 
 #form1 {
   display: grid;
-  grid-template-columns: 10% 1fr 10%;
+  grid-template-columns: 8% 1fr 8%;
 }
 
 form {  display: grid;
@@ -220,7 +225,7 @@ form {  display: grid;
   grid-column: 2/3;
   justify-self: center;
   background-color: #dbccea;
-  min-width: 400px; width: 60%; 
+  min-width: 400px; width: 70%; 
   padding: 45px;
 }
 
@@ -252,3 +257,49 @@ label {
   padding: 20px 10px;
 }
 
+/*Menu*/
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#menu img {
+  padding: 20px 15px 20px;
+}
+
+
+/*Menu Overlay*/
+
+.container {
+  position: relative;
+  width: 50%;
+  width: 500px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.menuoverlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(52, 0, 105);
+  background: rgba(52, 0, 105, 0.9); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .menuoverlay {
+  opacity: 1;
+}

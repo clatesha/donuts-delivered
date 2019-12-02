@@ -18,7 +18,7 @@ h1 {
 header {
   grid-column: 1;
   grid-row: 1;
-  width: 100px;
+  width: 150px;
   padding-top: 25px;
   justify-self: center;
 }
@@ -33,26 +33,62 @@ header {
 
 /*Fav media 2*/
 #favblock {
-  background-color: #b1ede8;
-  height: 455px;
-  margin: 10px 200px;
+  height: 605px;
+  margin: 10px 150px;
+}
+
+.cycle-slideshow img {
+  max-width: 100%;
+  max-height: 400px;
 }
 
 /*Reviews*/
 #review1 p {
-  margin: 10px 20px 10px 200px;
+  margin: 10px 20px 10px 150px;
  }
 
 #review2 p {
-  margin: 10px 200px 10px 20px;
+  margin: 10px 150px 10px 20px;
  }
 
 /*About Page*/
  #aboutp p {
   padding: 0 20px 15px;
   font-size: 20px;
+}
 
+/*Contact Us*/
+form {
+  width: 70%; 
+  height: 500px;
+}
+
+input[type="submit"] { 
+  width: 120px; 
+  height: 32px;
+  align-self: end;
+  background-color: white;
+}
+
+input[type="reset"] {
+  width: 120px;
+  height: 32px;
+  align-self: end;
+  background-color: white;
+}
+
+/*Menu*/
+
+#menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container {
+  grid-column: auto;
+  width: 100%;
 }
 
 
 
+}
