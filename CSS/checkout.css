@@ -1,5 +1,6 @@
 * { box-sizing: border-box; }
 
+/*Checkout Page*/
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -44,6 +45,7 @@
     margin-bottom: 10px;
     display: block;
   }
+
   
   .icon-container {
     margin-bottom: 20px;
