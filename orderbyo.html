@@ -8,13 +8,19 @@
     <link href="css/project.css" rel="stylesheet" />
     <link href="css/media1.css" rel="stylesheet" />
     <link href="css/media2.css" rel="stylesheet" />
+    <!--Checkout CSS-->
+    <link href="css/checkout.css" rel="stylesheet" />
     <!--GOOGLE FONT-->
-    <link href="https://fonts.googleapis.com/css?family=Calistoga|EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+
 
     <!--Javascript for Image Scroll-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="http://malsup.github.com/jquery.cycle2.js"></script>
     <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+    <!--Javascript for Cart-->
+    <script src="JS/checkout.js"></script>
 
 </head>
 
@@ -25,7 +31,6 @@
             <header>
 
                 <a href="index.html"><img src="icons/homeimage2.svg" alt="donut"></a>
-                <div id="picspace"></div>
 
 
 
@@ -116,10 +121,300 @@
         }
     </script>
 
-    <main>
+    <main id="byowrap">
 
+        <h1 id="sch1">Shopping Cart</h1>
+
+        <div class="shopping-cart">
+
+            <div class="column-labels">
+                <label class="product-image">Image</label>
+                <label class="product-details">Product</label>
+                <label class="product-price">Price</label>
+                <label class="product-quantity">Quantity</label>
+                <label class="product-removal">Remove</label>
+                <label class="product-line-price">Total</label>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/donutmenu/donut5.jpg" alt="Sugar Coated Donut">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Sugar Coated Donut</p>
+                </div>
+
+                <div class="product-price">4.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="2" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">4.99</div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/donutmenu/donut6.jpg" alt="Oreo Donut">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Oreo Donut</p>
+                </div>
+                <div class="product-price">5.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">5.99</div>
+            </div>
+
+
+
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/donutmenu/donut7.jpg" alt="Sprinkled Donut">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Sprinkled Donut</p>
+                </div>
+                <div class="product-price">5.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">5.99</div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/donutmenu/donut8.jpeg" alt="Cream Filled Powered Donut">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Cream Filled Powered Donut</p>
+                </div>
+                <div class="product-price">5.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">5.99</div>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/donutmenu/donut1.jpg" alt="Jelly Filled Powered Donut">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Jelly Filled Powered Donut</p>
+                </div>
+                <div class="product-price">4.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">4.99</div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/donutmenu/donut4.jpeg" alt="Sour Cream Donut">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Sour Cream Donut</p>
+                </div>
+                <div class="product-price">4.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">4.99</div>
+            </div>
+
+            <!--Beverages-->
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/coffeemenu/chocolate3.jpg" alt="Chocolate Milk">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Chocolate Milk</p>
+                </div>
+                <div class="product-price">3.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">3.99</div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/coffeemenu/milk.jpg" alt="Milk">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Milk</p>
+                </div>
+                <div class="product-price">3.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">3.99</div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/coffeemenu/orange2.jpg" alt="Orange Juice">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Orange Juice</p>
+                </div>
+                <div class="product-price">5.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">5.99</div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/coffeemenu/apple2.jpg" alt="Apple Juice">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Apple Juice</p>
+                </div>
+                <div class="product-price">4.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">4.99</div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/coffeemenu/tea1.jpg" alt="Tea">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Tea</p>
+                </div>
+                <div class="product-price">4.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">4.99</div>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img src="Images/coffeemenu/water.jpg" alt="Water">
+                </div>
+                <div class="product-details">
+                    <div class="product-title"></div>
+                    <p class="product-description">Water</p>
+                </div>
+                <div class="product-price">5.99</div>
+                <div class="product-quantity">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">
+                        Remove
+                    </button>
+                </div>
+                <div class="product-line-price">5.99</div>
+            </div>
+
+
+
+            <!--Totals-->
+            <div class="totals">
+                <div class="totals-item">
+                    <label>Subtotal</label>
+                    <div class="totals-value" id="cart-subtotal">71.97</div>
+                </div>
+                <div class="totals-item">
+                    <label>Tax (5%)</label>
+                    <div class="totals-value" id="cart-tax">3.60</div>
+                </div>
+                <div class="totals-item">
+                    <label>Shipping</label>
+                    <div class="totals-value" id="cart-shipping">15.00</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                    <label>Grand Total</label>
+                    <div class="totals-value" id="cart-total">90.57</div>
+                </div>
+            </div>
+
+            <a class="checkout" href='checkout.html'>Continue to Checkout</a>
+
+        </div>
 
     </main>
+
+
+
     <br><br>
     <footer>
         Copyright &copy; 2020 Donuts Delivered
