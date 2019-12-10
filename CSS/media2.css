@@ -58,12 +58,12 @@ header {
 }
 
 /*Contact Us*/
-form {
+#form1 form {
   width: 70%; 
   height: 500px;
 }
 
-input[type="submit"] { 
+#form1 input[type="submit"] { 
   width: 120px; 
   height: 32px;
   align-self: end;

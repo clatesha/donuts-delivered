@@ -218,7 +218,7 @@ footer {
   grid-template-columns: 8% 1fr 8%;
 }
 
-form {  display: grid;
+#form1 form {  display: grid;
   grid-template-rows: auto;
   grid-template-columns: 90px 1fr;
   gap: 9px;
@@ -229,7 +229,7 @@ form {  display: grid;
   padding: 45px;
 }
 
-input[type="submit"] { 
+#form1 input[type="submit"] { 
   grid-column: 2;
   width: 120px; 
   margin-left: 0;
