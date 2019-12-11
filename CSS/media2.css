@@ -34,7 +34,7 @@ header {
 /*Fav media 2*/
 #favblock {
   height: 605px;
-  margin: 10px 150px;
+  margin: 10px 150px 50px 150px;
 }
 
 .cycle-slideshow img {

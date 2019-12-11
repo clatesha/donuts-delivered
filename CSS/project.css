@@ -96,14 +96,18 @@ h2 {
     margin-bottom: 5px;
     margin-top: 0px;
     font-size: 30px;
+    display: block;
 }
 
 #favblock {
-    background-color: hsla(175, 62.5%, 81.2%, 0.3);
     height: 455px;
+    border-bottom: #340068 solid 1px;
+    margin-bottom: 50px;
 }
 
+
  /*Reviews (will make media query for table/fullsceen)*/
+
 
  #review1 p,
  #review2 p {
@@ -114,6 +118,8 @@ h2 {
      line-height: 150%;
      background-color: hsl(270, 41.7%, 85.9%, 0.3);
      margin: 10px 20px;
+     color: #340068;
+     font-weight: bold;
  }
 
 
@@ -256,6 +262,13 @@ label {
 .faqp {
   margin: 0 35px;
   padding: 20px 10px;
+}
+
+dt {
+  color: #340068;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 35px;
 }
 
 /*Menu*/
