@@ -64,7 +64,7 @@ h1 {
 }
 
 #backgroundimg {
-  background-image: url(home4.jpg);
+  background-image: url(../image/home4.jpg);
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
