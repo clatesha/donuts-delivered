@@ -100,27 +100,6 @@ h1 {
   margin: 20px 20px 20px 20px;
 }
 
-/*
-.cycle-slideshow {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  align-content: center;
-  min-height: 500px;
-}
-
-.cycle-slideshow img {
-  max-width: fit-content;
-  max-height: 100px;
-}
-
-.cycle-overlay {
- text-align: center;
- padding-top: 20px;
-}*/
-
 
 h2 {
   font-family: 'EB Garamond', serif;
@@ -129,15 +108,9 @@ h2 {
   padding-top: 20px;
   margin-bottom: 5px;
   margin-top: 0px;
-  font-size: 30px;
+  font-size: 50px;
   display: block;
 }
-
-/*#favblock {
-  height: 100px;
-  border-bottom: #340068 solid 1px;
-  margin-bottom: 50px;
-}*/
 
 
 /*Reviews (will make media query for table/fullsceen)*/
